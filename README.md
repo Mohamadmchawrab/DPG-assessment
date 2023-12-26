@@ -21,6 +21,7 @@ export class Item {
     this.quality = quality;
   }
 }
+```
 
 ### 2. Strategy Pattern Implementation
 
@@ -30,7 +31,7 @@ A Strategy Pattern has been applied to define a family of algorithms (update str
 interface UpdateStrategy {
   (item: Item): void;
 }
-
+```
 
 ## Update Strategies
 
@@ -48,7 +49,7 @@ A Factory Pattern has been implemented to create different update strategy objec
 getUpdateStrategy = (item: Item): UpdateStrategy => {
   // ... (implementation details)
 };
-
+```
 ## Getting started
 
 Install dependencies
